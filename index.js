@@ -12,11 +12,11 @@ async function main() {
         const collection = db.collection("users");
 
         // Insert a document
-        await collection.insertOne({ name: "Rai", age: 22 });
+        await collection.insertOne({ name: "Raidah Adliana", birth_year: 2003 });
         console.log("Document inserted!");
 
         // Query the document
-        const result = await collection.findOne({ name: "Rai" });
+        const result = await collection.findOne({ name: "Raidah Adliana" });
         console.log("Query result:", result);
     } catch (err) {
         console.error("Error:", err);
@@ -26,4 +26,3 @@ async function main() {
 }
 
 main();
-
