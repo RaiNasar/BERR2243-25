@@ -10,6 +10,10 @@ async function main() {
 
         const db = client.db("testDB");
         const collection = db.collection("users");
+        const start = Date.now();
+
+        await client.connect();
+        console.log("Connected to MongoDB!", Date.now() - start, "ms");
 
         // Insert a document
         await collection.insertOne({ name: "Raidah Adliana", birth_year: 2003 });
