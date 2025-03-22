@@ -1,7 +1,6 @@
+# BERR2243-25
+Hai everyone
 #!/bin/bash
-
-# "BERR2243-25"
-echo "Hai everyone"
 
 # Step 1: Install Development Tools
 
